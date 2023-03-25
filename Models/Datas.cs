@@ -12,7 +12,7 @@ public class Anag {
     }
 }
 
-public class DataContext :DbContext{
+public class DataContext : DbContext{
     public DataContext(DbContextOptions opt): base(opt) {
         this.Database.Migrate();
     }
