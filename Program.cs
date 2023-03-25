@@ -14,9 +14,12 @@ builder.Services.AddDbContext<DataContext>(o=>o.UseSqlite(
 ));
 //*/
 
+//* SqlServer
 builder.Services.AddDbContext<DataContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("local")
     ));
+
+//*/
 
 var app = builder.Build();
 
